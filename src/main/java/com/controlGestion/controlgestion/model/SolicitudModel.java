@@ -2,6 +2,8 @@ package com.controlGestion.controlgestion.model;
 
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -10,12 +12,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import lombok.Getter;
-import lombok.Setter;
 
 @Entity
-@Getter
-@Setter
 @Table(name = "cgt_solicitud", schema = "gestdoc")
 public class SolicitudModel {
 
@@ -26,30 +24,37 @@ public class SolicitudModel {
 
     @ManyToOne
     @JoinColumn(name = "cve_id_estatus")
+    @JsonIgnore
     private EstatusModel estatus;
 
     @ManyToOne
     @JoinColumn(name = "cve_id_usuario")
+    @JsonIgnore
     private UsuarioModel usuario;
 
     @ManyToOne
     @JoinColumn(name = "cve_id_tipo_documento")
+    @JsonIgnore
     private TipoDocumentoModel tipoDocumento;
 
     @ManyToOne
     @JoinColumn(name = "cve_id_tipo_clasificacion")
+    @JsonIgnore
     private ClasificacionModel clasificacion;
 
     @ManyToOne
     @JoinColumn(name = "cve_id_asignacion")
+    @JsonIgnore
     private AsignacionModel asignacion;
 
     @ManyToOne
     @JoinColumn(name = "cve_id_documento")
+    @JsonIgnore
     private DocumentoSolicitudModel documento;
 
     @ManyToOne
     @JoinColumn(name = "cve_id_remitente")
+    @JsonIgnore
     private RemitenteModel remitente;
 
     @Column(name = "no_requerimiento")
@@ -78,4 +83,143 @@ public class SolicitudModel {
 
     @Column(name = "reasignado")
     private Boolean reasignado;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public EstatusModel getEstatus() {
+        return estatus;
+    }
+
+    public void setEstatus(EstatusModel estatus) {
+        this.estatus = estatus;
+    }
+
+    public UsuarioModel getUsuario() {
+        return usuario;
+    }
+
+    public void setUsuario(UsuarioModel usuario) {
+        this.usuario = usuario;
+    }
+
+    public TipoDocumentoModel getTipoDocumento() {
+        return tipoDocumento;
+    }
+
+    public void setTipoDocumento(TipoDocumentoModel tipoDocumento) {
+        this.tipoDocumento = tipoDocumento;
+    }
+
+    public ClasificacionModel getClasificacion() {
+        return clasificacion;
+    }
+
+    public void setClasificacion(ClasificacionModel clasificacion) {
+        this.clasificacion = clasificacion;
+    }
+
+    public AsignacionModel getAsignacion() {
+        return asignacion;
+    }
+
+    public void setAsignacion(AsignacionModel asignacion) {
+        this.asignacion = asignacion;
+    }
+
+    public DocumentoSolicitudModel getDocumento() {
+        return documento;
+    }
+
+    public void setDocumento(DocumentoSolicitudModel documento) {
+        this.documento = documento;
+    }
+
+    public RemitenteModel getRemitente() {
+        return remitente;
+    }
+
+    public void setRemitente(RemitenteModel remitente) {
+        this.remitente = remitente;
+    }
+
+    public String getNoRequerimiento() {
+        return noRequerimiento;
+    }
+
+    public void setNoRequerimiento(String noRequerimiento) {
+        this.noRequerimiento = noRequerimiento;
+    }
+
+    public LocalDateTime getFechaDocumento() {
+        return fechaDocumento;
+    }
+
+    public void setFechaDocumento(LocalDateTime fechaDocumento) {
+        this.fechaDocumento = fechaDocumento;
+    }
+
+    public LocalDateTime getFechaRecepcion() {
+        return fechaRecepcion;
+    }
+
+    public void setFechaRecepcion(LocalDateTime fechaRecepcion) {
+        this.fechaRecepcion = fechaRecepcion;
+    }
+
+    public LocalDateTime getFechaEsperadaEntrega() {
+        return fechaEsperadaEntrega;
+    }
+
+    public void setFechaEsperadaEntrega(LocalDateTime fechaEsperadaEntrega) {
+        this.fechaEsperadaEntrega = fechaEsperadaEntrega;
+    }
+
+    public LocalDateTime getFechaActualizacionEstado() {
+        return fechaActualizacionEstado;
+    }
+
+    public void setFechaActualizacionEstado(LocalDateTime fechaActualizacionEstado) {
+        this.fechaActualizacionEstado = fechaActualizacionEstado;
+    }
+
+    public LocalDateTime getFechaBaja() {
+        return fechaBaja;
+    }
+
+    public void setFechaBaja(LocalDateTime fechaBaja) {
+        this.fechaBaja = fechaBaja;
+    }
+
+    public String getAsunto() {
+        return asunto;
+    }
+
+    public void setAsunto(String asunto) {
+        this.asunto = asunto;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Boolean getReasignado() {
+        return reasignado;
+    }
+
+    public void setReasignado(Boolean reasignado) {
+        this.reasignado = reasignado;
+    }
+
+
+
 }

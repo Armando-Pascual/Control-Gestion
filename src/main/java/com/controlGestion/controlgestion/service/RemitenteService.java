@@ -16,8 +16,6 @@ public class RemitenteService {
     public RemitenteModel guardar(RemitenteDTO dto) {
         RemitenteModel remitente = new RemitenteModel();
         remitente.setArea(dto.getArea());
-        remitente.setFecRegistroAlta(dto.getFecRegistroAlta());
-        remitente.setFecRegistroBaja(dto.getFecRegistroBaja());
         remitente.setNombre(dto.getNombre());
         remitente.setPrimerApellido(dto.getPrimerApellido());
         remitente.setSegundoApellido(dto.getSegundoApellido());
