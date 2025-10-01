@@ -13,7 +13,6 @@ import com.controlGestion.controlgestion.dto.AsignacionDTO;
 import com.controlGestion.controlgestion.dto.RemitenteDTO;
 import com.controlGestion.controlgestion.dto.SolicitudDTO;
 import com.controlGestion.controlgestion.model.AsignacionModel;
-import com.controlGestion.controlgestion.model.DocumentoSolicitudModel;
 import com.controlGestion.controlgestion.model.EstatusModel;
 import com.controlGestion.controlgestion.model.RemitenteModel;
 import com.controlGestion.controlgestion.model.SolicitudModel;
@@ -22,7 +21,6 @@ import com.controlGestion.controlgestion.model.UsuarioModel;
 import com.controlGestion.controlgestion.model.Enum.EstatusEnum;
 import com.controlGestion.controlgestion.repository.AdministradorAdministracionRepository;
 import com.controlGestion.controlgestion.repository.AsignacionRepository;
-import com.controlGestion.controlgestion.repository.DocumentoSolicitudRepository;
 import com.controlGestion.controlgestion.repository.EstatusRepository;
 import com.controlGestion.controlgestion.repository.RemitenteRepository;
 import com.controlGestion.controlgestion.repository.SolicitudRepository;
@@ -53,8 +51,6 @@ public class SolicitudService {
     @Autowired
     private AdministradorAdministracionRepository administradorAdministracionRepository;
 
-    @Autowired
-    private DocumentoSolicitudRepository documentoSolicitudRepository;
 
     private static final Logger logger = LoggerFactory.getLogger(SolicitudService.class);
 
@@ -255,7 +251,7 @@ public class SolicitudService {
         return solicitudRepository.save(solicitud);
     }
 
-    public SolicitudModel actualizarEstatusYDocumento(Integer idSolicitud, EstatusEnum nuevoEstatus,String cveIdDocumento) {
+    public SolicitudModel actualizarEstatusYDocumento(Integer idSolicitud, EstatusEnum nuevoEstatus,String cveIdDocumento, String comentarios, Boolean reasignado) {
         logger.info("Actualizando estatus de la solicitud ID: " + idSolicitud + " al nuevo estatus: "
                 + nuevoEstatus.name());
 
@@ -279,6 +275,8 @@ public class SolicitudService {
         // Aquí simplemente se asigna el valor recibido
         solicitud.setEstatus(estatusModel);
         solicitud.setCveIdDocumento(cveIdDocumento);
+        solicitud.setComentarios(comentarios);
+        solicitud.setReasignado(reasignado);
 
         return solicitudRepository.save(solicitud);
     }

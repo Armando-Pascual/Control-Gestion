@@ -20,6 +20,7 @@ public class SolicitudDTO {
     private LocalDateTime fechaRecepcion;
     private LocalDateTime fecDocumento;
     private LocalDateTime fecActualizacionEdo;
+    private String comentarios;
     
     //datos del remitente
     private RemitenteDTO remitente;  
@@ -137,5 +138,12 @@ public class SolicitudDTO {
     public void setIndOrigen(Integer indOrigen) {
         this.indOrigen = indOrigen;
     }
+
+    public String getComentarios() {
+        return comentarios;
+    }
     
+    public void setComentarios(String comentarios) {
+        this.comentarios = comentarios;
+    }
 }

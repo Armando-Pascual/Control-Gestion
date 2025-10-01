@@ -62,3 +62,705 @@
 2025-10-01T11:38:34.447-06:00  INFO 2888 --- [controlgestion] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
 2025-10-01T11:38:34.715-06:00  INFO 2888 --- [controlgestion] [http-nio-8080-exec-1] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 52 al nuevo estatus: PROCESO_DE_ENTREGA
 2025-10-01T11:38:34.834-06:00  INFO 2888 --- [controlgestion] [http-nio-8080-exec-1] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 52 es: 4
+2025-10-01T12:17:16.821-06:00  INFO 2888 --- [controlgestion] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T12:17:17.023-06:00  INFO 2888 --- [controlgestion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T12:17:17.035-06:00  INFO 2888 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:17:17.053-06:00  INFO 2888 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T12:17:17.063-06:00  INFO 2888 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T12:17:31.955-06:00  INFO 62136 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Starting ControlgestionApplicationTests using Java 17.0.12 with PID 62136 (started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T12:17:31.958-06:00  INFO 62136 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T12:17:33.386-06:00  INFO 62136 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T12:17:33.531-06:00  INFO 62136 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 15 JPA repository interfaces.
+2025-10-01T12:17:34.821-06:00  INFO 62136 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T12:17:35.023-06:00  INFO 62136 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T12:17:35.055-06:00  INFO 62136 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T12:17:35.636-06:00  INFO 62136 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T12:17:35.679-06:00  INFO 62136 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T12:17:36.033-06:00  INFO 62136 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@39a3984c
+2025-10-01T12:17:36.049-06:00  INFO 62136 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T12:17:36.114-06:00  WARN 62136 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T12:17:36.166-06:00  INFO 62136 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T12:17:37.826-06:00  INFO 62136 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T12:17:38.041-06:00  INFO 62136 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:17:39.268-06:00  WARN 62136 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T12:17:40.193-06:00  INFO 62136 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T12:17:41.245-06:00  INFO 62136 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Started ControlgestionApplicationTests in 9.948 seconds (process running for 11.605)
+2025-10-01T12:17:41.888-06:00  INFO 62136 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:17:41.897-06:00  INFO 62136 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T12:17:41.915-06:00  INFO 62136 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T12:17:50.811-06:00  INFO 48932 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Starting ControlgestionApplication using Java 17.0.12 with PID 48932 (C:\Users\armando.pascual\Pictures\controlgestion\target\classes started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T12:17:50.811-06:00  INFO 48932 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T12:17:51.372-06:00  INFO 48932 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T12:17:51.459-06:00  INFO 48932 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 15 JPA repository interfaces.
+2025-10-01T12:17:51.934-06:00  INFO 48932 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T12:17:51.957-06:00  INFO 48932 --- [controlgestion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T12:17:51.959-06:00  INFO 48932 --- [controlgestion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-01T12:17:51.999-06:00  INFO 48932 --- [controlgestion] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T12:17:52.000-06:00  INFO 48932 --- [controlgestion] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1130 ms
+2025-10-01T12:17:52.140-06:00  INFO 48932 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T12:17:52.176-06:00  INFO 48932 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T12:17:52.199-06:00  INFO 48932 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T12:17:52.420-06:00  INFO 48932 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T12:17:52.444-06:00  INFO 48932 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T12:17:52.674-06:00  INFO 48932 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11574592
+2025-10-01T12:17:52.674-06:00  INFO 48932 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T12:17:52.710-06:00  WARN 48932 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T12:17:52.728-06:00  INFO 48932 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T12:17:53.693-06:00  INFO 48932 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T12:17:53.841-06:00  INFO 48932 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:17:54.441-06:00  WARN 48932 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T12:17:54.892-06:00  INFO 48932 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T12:17:55.261-06:00  INFO 48932 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T12:17:55.276-06:00  INFO 48932 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Started ControlgestionApplication in 5.086 seconds (process running for 5.361)
+2025-10-01T12:18:36.781-06:00  INFO 48932 --- [controlgestion] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T12:18:36.783-06:00  INFO 48932 --- [controlgestion] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T12:18:36.783-06:00  INFO 48932 --- [controlgestion] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-01T12:18:37.458-06:00  WARN 48932 --- [controlgestion] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.controlGestion.controlgestion.dto.SolicitudDTO> com.controlGestion.controlgestion.controller.RevisionController.actualizarAProcesoEntrega(java.lang.Integer,com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO,com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO)]
+2025-10-01T12:22:33.990-06:00  INFO 48932 --- [controlgestion] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T12:22:34.209-06:00  INFO 48932 --- [controlgestion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T12:22:34.216-06:00  INFO 48932 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:22:34.220-06:00  INFO 48932 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T12:22:34.231-06:00  INFO 48932 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T12:22:50.598-06:00  INFO 34664 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Starting ControlgestionApplicationTests using Java 17.0.12 with PID 34664 (started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T12:22:50.600-06:00  INFO 34664 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T12:22:52.062-06:00  INFO 34664 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T12:22:52.256-06:00  INFO 34664 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 167 ms. Found 15 JPA repository interfaces.
+2025-10-01T12:22:53.385-06:00  INFO 34664 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T12:22:53.612-06:00  INFO 34664 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T12:22:53.727-06:00  INFO 34664 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T12:22:54.444-06:00  INFO 34664 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T12:22:54.496-06:00  INFO 34664 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T12:22:54.886-06:00  INFO 34664 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6cc8da1c
+2025-10-01T12:22:54.889-06:00  INFO 34664 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T12:22:54.951-06:00  WARN 34664 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T12:22:54.990-06:00  INFO 34664 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T12:22:57.547-06:00  INFO 34664 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T12:22:57.962-06:00  INFO 34664 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:22:59.438-06:00  WARN 34664 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T12:23:00.407-06:00  INFO 34664 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T12:23:01.150-06:00  INFO 34664 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Started ControlgestionApplicationTests in 11.052 seconds (process running for 12.889)
+2025-10-01T12:23:02.112-06:00  INFO 34664 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:23:02.112-06:00  INFO 34664 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T12:23:02.112-06:00  INFO 34664 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T12:23:16.912-06:00  INFO 4624 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Starting ControlgestionApplication using Java 17.0.12 with PID 4624 (C:\Users\armando.pascual\Pictures\controlgestion\target\classes started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T12:23:16.915-06:00  INFO 4624 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T12:23:17.432-06:00  INFO 4624 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T12:23:17.503-06:00  INFO 4624 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 58 ms. Found 15 JPA repository interfaces.
+2025-10-01T12:23:17.927-06:00  INFO 4624 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T12:23:17.942-06:00  INFO 4624 --- [controlgestion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T12:23:17.942-06:00  INFO 4624 --- [controlgestion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-01T12:23:17.993-06:00  INFO 4624 --- [controlgestion] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T12:23:17.993-06:00  INFO 4624 --- [controlgestion] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1039 ms
+2025-10-01T12:23:18.141-06:00  INFO 4624 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T12:23:18.176-06:00  INFO 4624 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T12:23:18.210-06:00  INFO 4624 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T12:23:18.375-06:00  INFO 4624 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T12:23:18.397-06:00  INFO 4624 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T12:23:18.536-06:00  INFO 4624 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@352e5a82
+2025-10-01T12:23:18.536-06:00  INFO 4624 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T12:23:18.562-06:00  WARN 4624 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T12:23:18.580-06:00  INFO 4624 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T12:23:19.323-06:00  INFO 4624 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T12:23:19.473-06:00  INFO 4624 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:23:19.855-06:00  WARN 4624 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T12:23:20.235-06:00  INFO 4624 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T12:23:20.609-06:00  INFO 4624 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T12:23:20.624-06:00  INFO 4624 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Started ControlgestionApplication in 4.102 seconds (process running for 4.326)
+2025-10-01T12:23:26.548-06:00  INFO 4624 --- [controlgestion] [http-nio-8080-exec-7] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T12:23:26.548-06:00  INFO 4624 --- [controlgestion] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T12:23:26.548-06:00  INFO 4624 --- [controlgestion] [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-01T12:23:26.772-06:00  WARN 4624 --- [controlgestion] [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.controlGestion.controlgestion.dto.SolicitudDTO> com.controlGestion.controlgestion.controller.RevisionController.actualizarAProcesoEntrega(java.lang.Integer,com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO,com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO)]
+2025-10-01T12:24:12.075-06:00  WARN 4624 --- [controlgestion] [http-nio-8080-exec-4] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.controlGestion.controlgestion.dto.SolicitudDTO> com.controlGestion.controlgestion.controller.RevisionController.actualizarAProcesoEntrega(java.lang.Integer,com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO,com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO)]
+2025-10-01T12:24:59.262-06:00  WARN 4624 --- [controlgestion] [http-nio-8080-exec-6] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.controlGestion.controlgestion.dto.SolicitudDTO> com.controlGestion.controlgestion.controller.RevisionController.actualizarAProcesoEntrega(java.lang.Integer,com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO,com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO)]
+2025-10-01T12:30:17.420-06:00  INFO 4624 --- [controlgestion] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T12:30:17.620-06:00  INFO 4624 --- [controlgestion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T12:30:17.631-06:00  INFO 4624 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:30:17.641-06:00  INFO 4624 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T12:30:17.648-06:00  INFO 4624 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T12:30:37.258-06:00  INFO 59920 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Starting ControlgestionApplicationTests using Java 17.0.12 with PID 59920 (started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T12:30:37.259-06:00  INFO 59920 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T12:30:38.956-06:00  INFO 59920 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T12:30:39.109-06:00  INFO 59920 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 108 ms. Found 15 JPA repository interfaces.
+2025-10-01T12:30:40.220-06:00  INFO 59920 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T12:30:40.436-06:00  INFO 59920 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T12:30:40.503-06:00  INFO 59920 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T12:30:41.172-06:00  INFO 59920 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T12:30:41.232-06:00  INFO 59920 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T12:30:41.726-06:00  INFO 59920 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4404a6b
+2025-10-01T12:30:41.726-06:00  INFO 59920 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T12:30:41.821-06:00  WARN 59920 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T12:30:41.864-06:00  INFO 59920 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T12:30:43.754-06:00  INFO 59920 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T12:30:44.016-06:00  INFO 59920 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:30:45.354-06:00  WARN 59920 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T12:30:46.430-06:00  INFO 59920 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T12:30:47.539-06:00  INFO 59920 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Started ControlgestionApplicationTests in 10.672 seconds (process running for 12.189)
+2025-10-01T12:30:48.327-06:00  INFO 59920 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:30:48.327-06:00  INFO 59920 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T12:30:48.337-06:00  INFO 59920 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T12:31:07.085-06:00  INFO 65448 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Starting ControlgestionApplication using Java 17.0.12 with PID 65448 (C:\Users\armando.pascual\Pictures\controlgestion\target\classes started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T12:31:07.085-06:00  INFO 65448 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T12:31:07.625-06:00  INFO 65448 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T12:31:07.700-06:00  INFO 65448 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 65 ms. Found 15 JPA repository interfaces.
+2025-10-01T12:31:08.291-06:00  INFO 65448 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T12:31:08.312-06:00  INFO 65448 --- [controlgestion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T12:31:08.314-06:00  INFO 65448 --- [controlgestion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-01T12:31:08.402-06:00  INFO 65448 --- [controlgestion] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T12:31:08.403-06:00  INFO 65448 --- [controlgestion] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1267 ms
+2025-10-01T12:31:08.534-06:00  INFO 65448 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T12:31:08.569-06:00  INFO 65448 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T12:31:08.603-06:00  INFO 65448 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T12:31:08.813-06:00  INFO 65448 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T12:31:08.837-06:00  INFO 65448 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T12:31:08.998-06:00  INFO 65448 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11574592
+2025-10-01T12:31:08.998-06:00  INFO 65448 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T12:31:09.023-06:00  WARN 65448 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T12:31:09.039-06:00  INFO 65448 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T12:31:10.007-06:00  INFO 65448 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T12:31:10.227-06:00  INFO 65448 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T12:31:10.796-06:00  WARN 65448 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T12:31:11.283-06:00  INFO 65448 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T12:31:11.638-06:00  INFO 65448 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T12:31:11.638-06:00  INFO 65448 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Started ControlgestionApplication in 4.949 seconds (process running for 5.22)
+2025-10-01T12:32:25.738-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T12:32:25.738-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T12:32:25.738-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-01T12:32:25.977-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-3] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 52 al nuevo estatus: PROCESO_DE_ENTREGA
+2025-10-01T12:32:26.074-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-3] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 52 es: 4
+2025-10-01T12:33:11.192-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-4] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 52 al nuevo estatus: PROCESO_DE_ENTREGA
+2025-10-01T12:33:11.212-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-4] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 52 es: 4
+2025-10-01T12:48:13.895-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-6] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 50 al nuevo estatus: ASIGNADA
+2025-10-01T12:48:13.950-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-6] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 50 es: 4
+2025-10-01T12:48:44.350-06:00 ERROR 65448 --- [controlgestion] [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: java.lang.IllegalStateException: La solicitud no puede avanzar desde el estado actual: 4] with root cause
+
+java.lang.IllegalStateException: La solicitud no puede avanzar desde el estado actual: 4
+	at com.controlGestion.controlgestion.controller.RevisionController.actualizarAAsignacion(RevisionController.java:56) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:360) ~[spring-aop-6.2.10.jar:6.2.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.2.10.jar:6.2.10]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.2.10.jar:6.2.10]
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.proceed(AuthorizationManagerBeforeMethodInterceptor.java:268) ~[spring-security-core-6.5.3.jar:6.5.3]
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.attemptAuthorization(AuthorizationManagerBeforeMethodInterceptor.java:263) ~[spring-security-core-6.5.3.jar:6.5.3]
+	at org.springframework.security.authorization.method.AuthorizationManagerBeforeMethodInterceptor.invoke(AuthorizationManagerBeforeMethodInterceptor.java:196) ~[spring-security-core-6.5.3.jar:6.5.3]
+	at org.springframework.security.config.annotation.method.configuration.DeferringMethodInterceptor.invoke(DeferringMethodInterceptor.java:44) ~[spring-security-config-6.5.3.jar:6.5.3]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.2.10.jar:6.2.10]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:728) ~[spring-aop-6.2.10.jar:6.2.10]
+	at com.controlGestion.controlgestion.controller.RevisionController$$SpringCGLIB$$0.actualizarAAsignacion(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:925) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:593) ~[tomcat-embed-core-10.1.44.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.44.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:195) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319) ~[spring-security-config-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267) ~[spring-webmvc-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240) ~[spring-security-config-6.5.3.jar:6.5.3]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.2.10.jar:6.2.10]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:164) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:140) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:483) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:116) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:344) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:398) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1769) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1189) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:658) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63) ~[tomcat-embed-core-10.1.44.jar:10.1.44]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+
+2025-10-01T12:49:14.795-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-8] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 50 al nuevo estatus: ASIGNADA
+2025-10-01T12:49:14.798-06:00  INFO 65448 --- [controlgestion] [http-nio-8080-exec-8] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 50 es: 4
+2025-10-01T13:13:16.881-06:00  INFO 65448 --- [controlgestion] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T13:13:17.078-06:00  INFO 65448 --- [controlgestion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T13:13:17.090-06:00  INFO 65448 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:13:17.111-06:00  INFO 65448 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:13:17.118-06:00  INFO 65448 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:13:34.059-06:00  INFO 58124 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Starting ControlgestionApplicationTests using Java 17.0.12 with PID 58124 (started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:13:34.061-06:00  INFO 58124 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:13:35.581-06:00  INFO 58124 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:13:35.707-06:00  INFO 58124 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:13:36.815-06:00  INFO 58124 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:13:36.983-06:00  INFO 58124 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:13:37.077-06:00  INFO 58124 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:13:37.960-06:00  INFO 58124 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:13:38.070-06:00  INFO 58124 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:13:38.480-06:00  INFO 58124 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@8f4b803
+2025-10-01T13:13:38.482-06:00  INFO 58124 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:13:38.594-06:00  WARN 58124 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:13:38.618-06:00  INFO 58124 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:13:40.399-06:00  INFO 58124 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:13:40.882-06:00  INFO 58124 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:13:42.328-06:00  WARN 58124 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:13:43.398-06:00  INFO 58124 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:13:44.885-06:00  INFO 58124 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Started ControlgestionApplicationTests in 11.268 seconds (process running for 12.918)
+2025-10-01T13:13:45.998-06:00  INFO 58124 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:13:46.008-06:00  INFO 58124 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:13:46.044-06:00  INFO 58124 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:13:56.593-06:00  INFO 32788 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Starting ControlgestionApplication using Java 17.0.12 with PID 32788 (C:\Users\armando.pascual\Pictures\controlgestion\target\classes started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:13:56.600-06:00  INFO 32788 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:13:57.317-06:00  INFO 32788 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:13:57.468-06:00  INFO 32788 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 139 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:13:58.006-06:00  INFO 32788 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T13:13:58.037-06:00  INFO 32788 --- [controlgestion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T13:13:58.051-06:00  INFO 32788 --- [controlgestion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-01T13:13:58.103-06:00  INFO 32788 --- [controlgestion] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T13:13:58.103-06:00  INFO 32788 --- [controlgestion] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1439 ms
+2025-10-01T13:13:58.267-06:00  INFO 32788 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:13:58.339-06:00  INFO 32788 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:13:58.355-06:00  INFO 32788 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:13:58.628-06:00  INFO 32788 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:13:58.651-06:00  INFO 32788 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:13:58.800-06:00  INFO 32788 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@315b5913
+2025-10-01T13:13:58.800-06:00  INFO 32788 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:13:58.831-06:00  WARN 32788 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:13:58.835-06:00  INFO 32788 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:13:59.839-06:00  INFO 32788 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:14:00.034-06:00  INFO 32788 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:14:00.622-06:00  WARN 32788 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:14:01.163-06:00  INFO 32788 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:14:01.418-06:00  INFO 32788 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T13:14:01.432-06:00  INFO 32788 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Started ControlgestionApplication in 5.395 seconds (process running for 5.642)
+2025-10-01T13:15:02.998-06:00  INFO 32788 --- [controlgestion] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T13:15:02.998-06:00  INFO 32788 --- [controlgestion] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T13:15:02.998-06:00  INFO 32788 --- [controlgestion] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-01T13:15:03.217-06:00  WARN 32788 --- [controlgestion] [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public org.springframework.http.ResponseEntity<com.controlGestion.controlgestion.dto.SolicitudDTO> com.controlGestion.controlgestion.controller.RevisionController.actualizarEstadoAsignacion(java.lang.Integer,com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO)]
+2025-10-01T13:17:39.298-06:00  INFO 32788 --- [controlgestion] [http-nio-8080-exec-4] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 50 al nuevo estatus: ASIGNADA
+2025-10-01T13:17:39.300-06:00  INFO 32788 --- [controlgestion] [http-nio-8080-exec-4] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 50 es: 4
+2025-10-01T13:18:40.218-06:00  INFO 32788 --- [controlgestion] [http-nio-8080-exec-3] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 50 al nuevo estatus: PROCESO_DE_ENTREGA
+2025-10-01T13:18:40.219-06:00  INFO 32788 --- [controlgestion] [http-nio-8080-exec-3] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 50 es: 4
+2025-10-01T13:19:18.302-06:00  INFO 32788 --- [controlgestion] [http-nio-8080-exec-8] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 50 al nuevo estatus: PROCESO_DE_ENTREGA
+2025-10-01T13:19:18.302-06:00  INFO 32788 --- [controlgestion] [http-nio-8080-exec-8] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 50 es: 4
+2025-10-01T13:26:05.311-06:00  INFO 32788 --- [controlgestion] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T13:26:05.512-06:00  INFO 32788 --- [controlgestion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T13:26:05.518-06:00  INFO 32788 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:26:05.530-06:00  INFO 32788 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:26:05.562-06:00  INFO 32788 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:26:20.065-06:00  INFO 22656 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Starting ControlgestionApplicationTests using Java 17.0.12 with PID 22656 (started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:26:20.065-06:00  INFO 22656 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:26:21.463-06:00  INFO 22656 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:26:21.592-06:00  INFO 22656 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:26:22.638-06:00  INFO 22656 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:26:22.829-06:00  INFO 22656 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:26:22.894-06:00  INFO 22656 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:26:23.516-06:00  INFO 22656 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:26:23.581-06:00  INFO 22656 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:26:23.979-06:00  INFO 22656 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4404a6b
+2025-10-01T13:26:23.985-06:00  INFO 22656 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:26:24.100-06:00  WARN 22656 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:26:24.147-06:00  INFO 22656 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:26:25.493-06:00  INFO 22656 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:26:25.663-06:00  INFO 22656 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:26:26.848-06:00  WARN 22656 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:26:27.654-06:00  INFO 22656 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:26:28.479-06:00  INFO 22656 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Started ControlgestionApplicationTests in 8.996 seconds (process running for 10.694)
+2025-10-01T13:26:29.230-06:00  INFO 22656 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:26:29.235-06:00  INFO 22656 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:26:29.255-06:00  INFO 22656 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:26:38.159-06:00  INFO 28232 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Starting ControlgestionApplication using Java 17.0.12 with PID 28232 (C:\Users\armando.pascual\Pictures\controlgestion\target\classes started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:26:38.168-06:00  INFO 28232 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:26:38.988-06:00  INFO 28232 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:26:39.112-06:00  INFO 28232 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:26:39.722-06:00  INFO 28232 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T13:26:39.740-06:00  INFO 28232 --- [controlgestion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T13:26:39.740-06:00  INFO 28232 --- [controlgestion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-01T13:26:39.802-06:00  INFO 28232 --- [controlgestion] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T13:26:39.802-06:00  INFO 28232 --- [controlgestion] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1573 ms
+2025-10-01T13:26:39.998-06:00  INFO 28232 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:26:40.034-06:00  INFO 28232 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:26:40.058-06:00  INFO 28232 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:26:40.291-06:00  INFO 28232 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:26:40.321-06:00  INFO 28232 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:26:40.489-06:00  INFO 28232 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7645e64
+2025-10-01T13:26:40.489-06:00  INFO 28232 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:26:40.522-06:00  WARN 28232 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:26:40.548-06:00  INFO 28232 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:26:41.593-06:00  INFO 28232 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:26:41.775-06:00  INFO 28232 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:26:42.246-06:00  WARN 28232 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:26:42.660-06:00  INFO 28232 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:26:43.002-06:00  INFO 28232 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T13:26:43.025-06:00  INFO 28232 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Started ControlgestionApplication in 5.626 seconds (process running for 6.103)
+2025-10-01T13:27:06.545-06:00  INFO 28232 --- [controlgestion] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-10-01T13:27:06.545-06:00  INFO 28232 --- [controlgestion] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-10-01T13:27:06.545-06:00  INFO 28232 --- [controlgestion] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2025-10-01T13:27:07.395-06:00  INFO 28232 --- [controlgestion] [http-nio-8080-exec-1] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 50 al nuevo estatus: PROCESO_DE_ENTREGA
+2025-10-01T13:27:07.412-06:00  INFO 28232 --- [controlgestion] [http-nio-8080-exec-1] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 50 es: 4
+2025-10-01T13:27:38.293-06:00  INFO 28232 --- [controlgestion] [http-nio-8080-exec-5] c.c.c.service.SolicitudService           : Actualizando estatus de la solicitud ID: 50 al nuevo estatus: ASIGNADA
+2025-10-01T13:27:38.293-06:00  INFO 28232 --- [controlgestion] [http-nio-8080-exec-5] c.c.c.service.SolicitudService           : Estatus actual de la solicitud ID: 50 es: 4
+2025-10-01T13:31:42.404-06:00  INFO 28232 --- [controlgestion] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T13:31:42.589-06:00  INFO 28232 --- [controlgestion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T13:31:42.595-06:00  INFO 28232 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:31:42.598-06:00  INFO 28232 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:31:42.604-06:00  INFO 28232 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:31:55.990-06:00  INFO 59844 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Starting ControlgestionApplicationTests using Java 17.0.12 with PID 59844 (started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:31:55.993-06:00  INFO 59844 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:31:57.303-06:00  INFO 59844 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:31:57.537-06:00  INFO 59844 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 213 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:31:58.404-06:00  INFO 59844 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:31:58.602-06:00  INFO 59844 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:31:58.656-06:00  INFO 59844 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:31:59.386-06:00  INFO 59844 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:31:59.447-06:00  INFO 59844 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:31:59.732-06:00  INFO 59844 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6cc8da1c
+2025-10-01T13:31:59.734-06:00  INFO 59844 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:31:59.767-06:00  WARN 59844 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:31:59.795-06:00  INFO 59844 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:32:01.340-06:00  INFO 59844 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:32:01.558-06:00  INFO 59844 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:32:02.835-06:00  WARN 59844 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:32:03.717-06:00  INFO 59844 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:32:04.978-06:00  INFO 59844 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Started ControlgestionApplicationTests in 9.441 seconds (process running for 11.246)
+2025-10-01T13:32:06.026-06:00  INFO 59844 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:32:06.029-06:00  INFO 59844 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:32:06.046-06:00  INFO 59844 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:32:18.936-06:00  INFO 25116 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Starting ControlgestionApplication using Java 17.0.12 with PID 25116 (C:\Users\armando.pascual\Pictures\controlgestion\target\classes started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:32:18.939-06:00  INFO 25116 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:32:19.508-06:00  INFO 25116 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:32:19.621-06:00  INFO 25116 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 100 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:32:20.121-06:00  INFO 25116 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T13:32:20.137-06:00  INFO 25116 --- [controlgestion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T13:32:20.138-06:00  INFO 25116 --- [controlgestion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-01T13:32:20.190-06:00  INFO 25116 --- [controlgestion] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T13:32:20.191-06:00  INFO 25116 --- [controlgestion] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1195 ms
+2025-10-01T13:32:20.323-06:00  INFO 25116 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:32:20.357-06:00  INFO 25116 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:32:20.384-06:00  INFO 25116 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:32:20.593-06:00  INFO 25116 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:32:20.616-06:00  INFO 25116 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:32:20.762-06:00  INFO 25116 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11574592
+2025-10-01T13:32:20.764-06:00  INFO 25116 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:32:20.791-06:00  WARN 25116 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:32:20.805-06:00  INFO 25116 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:32:21.669-06:00  INFO 25116 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:32:21.858-06:00  INFO 25116 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:32:22.405-06:00  WARN 25116 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:32:22.833-06:00  INFO 25116 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:32:23.196-06:00  INFO 25116 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T13:32:23.208-06:00  INFO 25116 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Started ControlgestionApplication in 4.818 seconds (process running for 5.105)
+2025-10-01T13:40:29.894-06:00  INFO 25116 --- [controlgestion] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T13:40:30.085-06:00  INFO 25116 --- [controlgestion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T13:40:30.089-06:00  INFO 25116 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:40:30.091-06:00  INFO 25116 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:40:30.094-06:00  INFO 25116 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:40:45.518-06:00  INFO 47028 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Starting ControlgestionApplicationTests using Java 17.0.12 with PID 47028 (started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:40:45.524-06:00  INFO 47028 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:40:46.704-06:00  INFO 47028 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:40:46.841-06:00  INFO 47028 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 109 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:40:47.736-06:00  INFO 47028 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:40:47.882-06:00  INFO 47028 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:40:47.955-06:00  INFO 47028 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:40:48.566-06:00  INFO 47028 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:40:48.615-06:00  INFO 47028 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:40:48.922-06:00  INFO 47028 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@646e6d07
+2025-10-01T13:40:48.925-06:00  INFO 47028 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:40:48.960-06:00  WARN 47028 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:40:48.995-06:00  INFO 47028 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:40:50.451-06:00  INFO 47028 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:40:50.641-06:00  INFO 47028 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:40:51.764-06:00  WARN 47028 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:40:52.521-06:00  INFO 47028 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:40:53.397-06:00  INFO 47028 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Started ControlgestionApplicationTests in 8.465 seconds (process running for 10.16)
+2025-10-01T13:40:54.094-06:00  INFO 47028 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:40:54.096-06:00  INFO 47028 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:40:54.114-06:00  INFO 47028 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:41:02.498-06:00  INFO 19892 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Starting ControlgestionApplication using Java 17.0.12 with PID 19892 (C:\Users\armando.pascual\Pictures\controlgestion\target\classes started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:41:02.500-06:00  INFO 19892 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:41:03.235-06:00  INFO 19892 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:41:03.366-06:00  INFO 19892 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 115 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:41:04.057-06:00  INFO 19892 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T13:41:04.069-06:00  INFO 19892 --- [controlgestion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T13:41:04.085-06:00  INFO 19892 --- [controlgestion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-01T13:41:04.119-06:00  INFO 19892 --- [controlgestion] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T13:41:04.134-06:00  INFO 19892 --- [controlgestion] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1558 ms
+2025-10-01T13:41:04.279-06:00  INFO 19892 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:41:04.305-06:00  INFO 19892 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:41:04.328-06:00  INFO 19892 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:41:04.610-06:00  INFO 19892 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:41:04.632-06:00  INFO 19892 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:41:04.839-06:00  INFO 19892 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11574592
+2025-10-01T13:41:04.841-06:00  INFO 19892 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:41:04.889-06:00  WARN 19892 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:41:04.915-06:00  INFO 19892 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:41:05.840-06:00  INFO 19892 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:41:05.992-06:00  INFO 19892 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:41:06.482-06:00  WARN 19892 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:41:06.917-06:00  INFO 19892 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:41:07.321-06:00  INFO 19892 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T13:41:07.327-06:00  INFO 19892 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Started ControlgestionApplication in 5.368 seconds (process running for 5.641)
+2025-10-01T13:48:03.588-06:00  INFO 19892 --- [controlgestion] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T13:48:03.811-06:00  INFO 19892 --- [controlgestion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T13:48:03.839-06:00  INFO 19892 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:48:03.865-06:00  INFO 19892 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:48:03.888-06:00  INFO 19892 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:53:33.975-06:00  INFO 61840 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Starting ControlgestionApplicationTests using Java 17.0.12 with PID 61840 (started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:53:33.978-06:00  INFO 61840 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:53:35.381-06:00  INFO 61840 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:53:35.546-06:00  INFO 61840 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 138 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:53:36.473-06:00  INFO 61840 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:53:36.679-06:00  INFO 61840 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:53:36.729-06:00  INFO 61840 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:53:37.374-06:00  INFO 61840 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:53:37.434-06:00  INFO 61840 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:53:37.767-06:00  INFO 61840 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4404a6b
+2025-10-01T13:53:37.767-06:00  INFO 61840 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:53:37.809-06:00  WARN 61840 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:53:37.829-06:00  INFO 61840 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:53:39.474-06:00  INFO 61840 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:53:39.789-06:00  INFO 61840 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:53:40.926-06:00  WARN 61840 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:53:41.825-06:00  INFO 61840 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:53:42.764-06:00  INFO 61840 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Started ControlgestionApplicationTests in 9.286 seconds (process running for 10.867)
+2025-10-01T13:53:43.482-06:00  INFO 61840 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:53:43.483-06:00  INFO 61840 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:53:43.504-06:00  INFO 61840 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:53:52.483-06:00  INFO 37756 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Starting ControlgestionApplication using Java 17.0.12 with PID 37756 (C:\Users\armando.pascual\Pictures\controlgestion\target\classes started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:53:52.485-06:00  INFO 37756 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:53:53.117-06:00  INFO 37756 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:53:53.206-06:00  INFO 37756 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 79 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:53:53.743-06:00  INFO 37756 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-10-01T13:53:53.768-06:00  INFO 37756 --- [controlgestion] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-10-01T13:53:53.770-06:00  INFO 37756 --- [controlgestion] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.44]
+2025-10-01T13:53:53.835-06:00  INFO 37756 --- [controlgestion] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-10-01T13:53:53.835-06:00  INFO 37756 --- [controlgestion] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1308 ms
+2025-10-01T13:53:53.980-06:00  INFO 37756 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:53:54.017-06:00  INFO 37756 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:53:54.052-06:00  INFO 37756 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:53:54.308-06:00  INFO 37756 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:53:54.352-06:00  INFO 37756 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:53:54.524-06:00  INFO 37756 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@11574592
+2025-10-01T13:53:54.524-06:00  INFO 37756 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:53:54.573-06:00  WARN 37756 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:53:54.600-06:00  INFO 37756 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:53:55.495-06:00  INFO 37756 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:53:55.626-06:00  INFO 37756 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:53:56.249-06:00  WARN 37756 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:53:56.665-06:00  INFO 37756 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:53:57.037-06:00  INFO 37756 --- [controlgestion] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-10-01T13:53:57.064-06:00  INFO 37756 --- [controlgestion] [main] c.c.c.ControlgestionApplication          : Started ControlgestionApplication in 5.106 seconds (process running for 5.386)
+2025-10-01T13:54:09.436-06:00  INFO 37756 --- [controlgestion] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-10-01T13:54:09.632-06:00  INFO 37756 --- [controlgestion] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-10-01T13:54:09.637-06:00  INFO 37756 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:54:09.640-06:00  INFO 37756 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:54:09.644-06:00  INFO 37756 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-10-01T13:54:22.443-06:00  INFO 52624 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Starting ControlgestionApplicationTests using Java 17.0.12 with PID 52624 (started by armando.pascual in C:\Users\armando.pascual\Pictures\controlgestion)
+2025-10-01T13:54:22.445-06:00  INFO 52624 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : No active profile set, falling back to 1 default profile: "default"
+2025-10-01T13:54:23.787-06:00  INFO 52624 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-10-01T13:54:23.977-06:00  INFO 52624 --- [controlgestion] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 176 ms. Found 15 JPA repository interfaces.
+2025-10-01T13:54:25.071-06:00  INFO 52624 --- [controlgestion] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-10-01T13:54:25.209-06:00  INFO 52624 --- [controlgestion] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.26.Final
+2025-10-01T13:54:25.284-06:00  INFO 52624 --- [controlgestion] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-10-01T13:54:25.778-06:00  INFO 52624 --- [controlgestion] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-10-01T13:54:25.826-06:00  INFO 52624 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-10-01T13:54:26.083-06:00  INFO 52624 --- [controlgestion] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1b60d324
+2025-10-01T13:54:26.089-06:00  INFO 52624 --- [controlgestion] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-10-01T13:54:26.126-06:00  WARN 52624 --- [controlgestion] [main] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-10-01T13:54:26.143-06:00  INFO 52624 --- [controlgestion] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.6
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-10-01T13:54:27.760-06:00  INFO 52624 --- [controlgestion] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-10-01T13:54:27.958-06:00  INFO 52624 --- [controlgestion] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:54:29.105-06:00  WARN 52624 --- [controlgestion] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-10-01T13:54:29.843-06:00  INFO 52624 --- [controlgestion] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-10-01T13:54:30.687-06:00  INFO 52624 --- [controlgestion] [main] c.c.c.ControlgestionApplicationTests     : Started ControlgestionApplicationTests in 8.83 seconds (process running for 10.583)
+2025-10-01T13:54:31.388-06:00  INFO 52624 --- [controlgestion] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-10-01T13:54:31.388-06:00  INFO 52624 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-10-01T13:54:31.411-06:00  INFO 52624 --- [controlgestion] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

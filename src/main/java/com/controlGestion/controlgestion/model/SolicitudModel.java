@@ -86,6 +86,9 @@ public class SolicitudModel {
 
     @Column(name = "ind_origen")
     private Integer indOrigen;
+
+    @Column(name = "comentarios")
+    private String comentarios;
     
     public Integer getIndOrigen() {
         return indOrigen;
@@ -239,7 +242,12 @@ public class SolicitudModel {
     public void setCveIdDocumento(String cveIdDocumento) {
         this.cveIdDocumento = cveIdDocumento;
     }
+    public String getComentarios() {
+        return comentarios;
+    }
+    public void setComentarios(String comentarios) {
+        this.comentarios = comentarios;
+    }
 
-
-
+    
 }

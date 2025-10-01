@@ -46,6 +46,7 @@ public class AsignacionController {
             throw new IllegalStateException(
                     "La solicitud no puede avanzar desde el estado actual: " + estadoActualId);
         }
+        //esta validacion complementa la regla de reproceso, por medio del estado
 
         SolicitudDTO dto = solicitudMapper.toDTO(actualizada);
         return ResponseEntity.ok(dto);

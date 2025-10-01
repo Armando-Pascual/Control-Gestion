@@ -7,8 +7,9 @@ import lombok.Setter;
 @Setter
 public class ActualizarSolicitudDTO {
 
+    private Boolean reasignado;
     private String cveIdDocumento;
-    private String asunto;
+    private String comentarios;
 }
 
 
