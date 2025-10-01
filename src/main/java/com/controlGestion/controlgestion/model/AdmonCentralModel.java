@@ -3,6 +3,8 @@ package com.controlGestion.controlgestion.model;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -27,24 +29,27 @@ public class AdmonCentralModel {
     private String acronimo;
 
     @Column(name = "administracion", length = 150)
-    private String nombre;
+    private String administracion;
 
     @Column(name = "puesto", length = 150)
     private String puesto;
-
-    @ManyToOne
-    @JoinColumn(name = "cve_id_admon_general")
-    private AdmonGeneralModel admonGeneral;
 
     @Column(name = "fec_registro_alta")
     private LocalDateTime fecRegistroAlta;
 
     @Column(name = "fec_registro_baja")
     private LocalDateTime fecRegistroBaja;
+    
+    @ManyToOne
+    @JsonManagedReference
+    @JoinColumn(name = "cve_id_admon_general")
+    private AdmonGeneralModel admonGeneral;
 
     @OneToMany(mappedBy = "admonCentral")
+    @JsonManagedReference
     private List<AdministracionModel> administraciones;
 
     @OneToMany(mappedBy = "admonCentral")
+    @JsonManagedReference
     private List<AdministradorCentralModel> administradoresCentrales;
 }

@@ -42,6 +42,4 @@ public class DocumentoSolicitudModel {
     @Column(name = "fec_registro_baja")
     private LocalDateTime fecRegistroBaja;
 
-    @OneToMany(mappedBy = "documento")
-    private List<SolicitudModel> solicitudes;
 }

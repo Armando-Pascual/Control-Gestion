@@ -3,6 +3,8 @@ package com.controlGestion.controlgestion.model;
 import java.time.LocalDateTime;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -27,7 +29,7 @@ public class AdministracionModel {
     private String acronimo;
 
     @Column(name = "administracion", length = 150)
-    private String nombre;
+    private String administracion;
 
     @Column(name = "puesto", length = 150)
     private String puesto;
@@ -43,5 +45,6 @@ public class AdministracionModel {
     private LocalDateTime fecRegistroBaja;
 
     @OneToMany(mappedBy = "administracion")
+    @JsonBackReference
     private List<AdministradorAdministracionModel> administradores;
 }

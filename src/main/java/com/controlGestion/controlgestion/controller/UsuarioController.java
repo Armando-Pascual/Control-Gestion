@@ -1,4 +1,5 @@
 package com.controlGestion.controlgestion.controller;
+
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,24 +35,22 @@ public class UsuarioController {
         return ResponseEntity.status(HttpStatus.CREATED).body(nuevo);
     }
 
-@PostMapping("/login")
-public ResponseEntity<UsuarioDto> login(@RequestBody UsuarioModel usuario) {
-    Optional<UsuarioModel> usuarioEncontrado = usuarioRepository.findByCorreo(usuario.getCorreo());
+    @PostMapping("/login")
+    public ResponseEntity<UsuarioDto> login(@RequestBody UsuarioModel usuario) {
+        Optional<UsuarioModel> usuarioEncontrado = usuarioRepository.findByCorreo(usuario.getCorreo());
 
-    if (usuarioEncontrado.isPresent() &&
-        usuarioEncontrado.get().getPassword().equals(usuario.getPassword())) {
+        if (usuarioEncontrado.isPresent() &&
+                usuarioEncontrado.get().getPassword().equals(usuario.getPassword())) {
 
-        String nombre = usuarioEncontrado.get().getNombreUsuario();
-        String rol = usuarioEncontrado.get().getRol();
-        //String mensaje = "Bienvenido " + nombre;
+            String nombre = usuarioEncontrado.get().getNombreUsuario();
+            String rol = usuarioEncontrado.get().getRol();
 
-        UsuarioDto respuesta = new UsuarioDto(nombre, rol);
-        return ResponseEntity.ok(respuesta);
-    } else {
-        return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+            UsuarioDto respuesta = new UsuarioDto(nombre, rol);
+            return ResponseEntity.ok(respuesta);
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
     }
-}
-
 
     // Listar usuarios por rol (RECEPCION, ASIGNACION, REVISION)
     @GetMapping("/rol/{rol}")

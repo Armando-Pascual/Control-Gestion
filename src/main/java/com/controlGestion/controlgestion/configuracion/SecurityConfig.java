@@ -2,6 +2,7 @@ package com.controlGestion.controlgestion.configuracion;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -26,6 +27,11 @@ public class SecurityConfig {
             .csrf(csrf -> csrf.disable())
             .authorizeHttpRequests(auth -> auth
                 .requestMatchers("/api/solicitud/**").hasRole("RECEPCION")
+                .requestMatchers("/api/asignacion/**").hasRole("ASIGNADOR")
+                .requestMatchers("/api/recepcion/**").hasRole("RECEPCION")
+                .requestMatchers("/api/revision/**").hasRole("REVISION")
+                .requestMatchers(HttpMethod.GET, "/api/solicitud/**").hasAnyRole("RECEPCION", "ASIGNADOR", "REVISION")
+
                 .anyRequest().authenticated()
             )
             .httpBasic(Customizer.withDefaults()); 
@@ -39,12 +45,23 @@ public class SecurityConfig {
             .password(passwordEncoder().encode("1234"))
             .roles("RECEPCION")
             .build();
-
-        return new InMemoryUserDetailsManager(recepcion);
+        UserDetails asignador = User.withUsername("asignador")
+            .password(passwordEncoder().encode("5678"))
+            .roles("ASIGNADOR")
+            .build();
+       UserDetails revision = User.withUsername("revision")
+            .password(passwordEncoder().encode("9999"))
+            .roles("REVISION")
+            .build();
+     
+        return new InMemoryUserDetailsManager(recepcion, asignador, revision);
     }
+
 
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
+
+    
 }

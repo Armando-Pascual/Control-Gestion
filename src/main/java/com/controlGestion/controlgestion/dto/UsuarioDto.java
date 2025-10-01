@@ -1,10 +1,5 @@
 package com.controlGestion.controlgestion.dto;
 
-import lombok.Getter;
-import lombok.Setter;
-
-@Setter
-@Getter
 public class UsuarioDto {
     private String nombre;
     private String rol;
@@ -17,4 +12,22 @@ public class UsuarioDto {
     public UsuarioDto() {
 
     }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getRol() {
+        return rol;
+    }
+
+    public void setRol(String rol) {
+        this.rol = rol;
+    }
+
+    
 }

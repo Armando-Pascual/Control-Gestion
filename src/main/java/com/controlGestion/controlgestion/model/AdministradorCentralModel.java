@@ -2,6 +2,8 @@ package com.controlGestion.controlgestion.model;
 
 import java.time.LocalDateTime;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -32,6 +34,7 @@ public class AdministradorCentralModel {
 
     @ManyToOne
     @JoinColumn(name = "cve_id_admon_central")
+    @JsonManagedReference
     private AdmonCentralModel admonCentral;
 
     @Column(name = "fec_registro_alta")
