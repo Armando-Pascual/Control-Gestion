@@ -15,7 +15,6 @@ import com.controlGestion.controlgestion.mapper.SolicitudMapper;
 import com.controlGestion.controlgestion.model.SolicitudModel;
 import com.controlGestion.controlgestion.service.SolicitudService;
 
-
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api/solicitud")
@@ -27,13 +26,14 @@ public class SolicitudController {
     @Autowired
     private SolicitudMapper solicitudMapper;
 
+
     // Consulta todas las solicitudes existentes
     @GetMapping
     public ResponseEntity<List<SolicitudDTO>> obtenerTodasLasSolicitudes() {
         List<SolicitudModel> solicitudes = solicitudService.obtenerTodas();
         List<SolicitudDTO> dtos = solicitudes.stream()
-            .map(solicitudMapper::toDTO)
-            .toList();
+                .map(solicitudMapper::toDTO)
+                .toList();
         return ResponseEntity.ok(dtos);
     }
 
@@ -44,4 +44,14 @@ public class SolicitudController {
         SolicitudDTO dto = solicitudMapper.toDTO(solicitud);
         return ResponseEntity.ok(dto);
     }
+
+    /*/ Consulta el historial de estados de una solicitud
+    @GetMapping("/{id}/historial")
+    public ResponseEntity<List<EstadoDTO>> obtenerHistorialDeEstados(@PathVariable Integer id) {
+        List<EstadoModel> historial = estadoRepository.findBySolicitudCveIdSolicitud(id);
+        List<EstadoDTO> dtoList = historial.stream()
+                .map(estadoMapper::toDTO)
+                .toList();
+        return ResponseEntity.ok(dtoList);
+    }*/
 }

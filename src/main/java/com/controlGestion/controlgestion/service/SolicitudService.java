@@ -51,6 +51,8 @@ public class SolicitudService {
     @Autowired
     private AdministradorAdministracionRepository administradorAdministracionRepository;
 
+    
+
 
     private static final Logger logger = LoggerFactory.getLogger(SolicitudService.class);
 

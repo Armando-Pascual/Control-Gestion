@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.controlGestion.controlgestion.dto.ActualizarSolicitudDTO;
 import com.controlGestion.controlgestion.dto.SolicitudDTO;
 import com.controlGestion.controlgestion.mapper.SolicitudMapper;
 import com.controlGestion.controlgestion.model.SolicitudModel;
@@ -32,16 +33,17 @@ public class AsignacionController {
     // Avanza el estado de una solicitud a "En Revisión" o "Documento Acuse" según
     // corresponda
     @PutMapping("/{id}/estado/revision")
-    public ResponseEntity<SolicitudDTO> actualizarARevision(@PathVariable Integer id) {
+    public ResponseEntity<SolicitudDTO> actualizarARevision(@PathVariable Integer id,
+    @RequestBody ActualizarSolicitudDTO datos) {
         SolicitudModel solicitud = solicitudService.obtenerPorId(id);
         Integer estadoActualId = solicitud.getEstatus().getId();
 
         SolicitudModel actualizada;
 
         if (estadoActualId == EstatusEnum.ASIGNADA.getId()) {
-            actualizada = solicitudService.actualizarEstatus(id, EstatusEnum.REVISION);
+            actualizada = solicitudService.actualizarEstatusYDocumento(id, EstatusEnum.REVISION, null, datos.getComentarios(), null);
         } else if (estadoActualId == EstatusEnum.PROCESO_DE_ENTREGA.getId()) {
-            actualizada = solicitudService.actualizarEstatus(id, EstatusEnum.DOCUMENTO_ACUSE);
+            actualizada = solicitudService.actualizarEstatusYDocumento(id, EstatusEnum.DOCUMENTO_ACUSE, null, datos.getComentarios(), null);
         } else {
             throw new IllegalStateException(
                     "La solicitud no puede avanzar desde el estado actual: " + estadoActualId);
@@ -57,5 +59,4 @@ public class AsignacionController {
         SolicitudModel nueva = solicitudService.crearSolicitudAsignacion(dto);
         return ResponseEntity.status(HttpStatus.CREATED).body(nueva);
     }
-
 }
