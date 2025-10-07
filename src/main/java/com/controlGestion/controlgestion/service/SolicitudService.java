@@ -276,7 +276,10 @@ public class SolicitudService {
 
         // Aquí simplemente se asigna el valor recibido
         solicitud.setEstatus(estatusModel);
-        solicitud.setCveIdDocumento(cveIdDocumento);
+        if(solicitud.getCveIdDocumento()==null || solicitud.getCveIdDocumento().isEmpty()){
+              solicitud.setCveIdDocumento(cveIdDocumento);
+        }
+        //solicitud.setCveIdDocumento(cveIdDocumento);
         solicitud.setComentarios(comentarios);
         solicitud.setReasignado(reasignado);
 
